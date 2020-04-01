@@ -1,9 +1,10 @@
+
 variable "AccessKeyID" {}
 
 variable "SecretAccessKey" {}
 
 variable "prefix" {
-  default = "tf-aws-bigip"
+  default = "tf-westcon-bigip"
 }
 ## Europe Regions need oder Jumphost and BigIP Instance Typs1
 ## Uncomment needed region below
