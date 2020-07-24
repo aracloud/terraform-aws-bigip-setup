@@ -1,3 +1,4 @@
+
 #
 # Set minimum Terraform version and Terraform Cloud backend
 #
@@ -12,6 +13,7 @@ provider "aws" {
   region     = var.region
   access_key = var.AccessKeyID
   secret_key = var.SecretAccessKey
+  token = var.AWSSessionToken
 }
 
 #
@@ -20,5 +22,3 @@ provider "aws" {
 resource "random_id" "id" {
   byte_length = 2
 }
-
-
